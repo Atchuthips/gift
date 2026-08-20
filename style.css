@@ -554,10 +554,11 @@ backdrop-filter:blur(20px);
         height: 100%;
         padding: 20px;
         justify-content: center;
+		transform:translateY(-25px);
     }
 
     #thumbnail {
-        width: 190px;
+        width: 250px;
         margin-bottom: 25px;
     }
 
@@ -570,7 +571,13 @@ backdrop-filter:blur(20px);
     .letter {
         width: 90%;
         padding: 40px 25px;
-        margin: -35px auto 0;
+        margin: -50px auto 0;
     }
+
+	.gift,
+	.from{
+    padding:10px 16px;
+    font-size:14px;
+}
 
 }
