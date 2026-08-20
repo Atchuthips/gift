@@ -351,7 +351,7 @@ header{
 
 .hero{
 
-    height:760px;
+    height:620px;
 
 }
 
@@ -542,19 +542,35 @@ backdrop-filter:blur(20px);
 @media (max-width: 768px) {
 
     .hero {
-        min-height: 52vh;
+        height: 620px;
+    }
+
+    header {
+        padding: 20px;
+        font-size: 15px;
+    }
+
+    .hero-content {
+        height: 100%;
+        padding: 20px;
+        justify-content: center;
     }
 
     #thumbnail {
         width: 190px;
+        margin-bottom: 25px;
     }
 
-    .hero-content {
-        padding-top: 40px;
+    #title {
+        font-size: 38px;
+        line-height: 1.1;
+        margin-top: 5px;
     }
 
     .letter {
-        margin-top: -35px;
+        width: 90%;
+        padding: 40px 25px;
+        margin: -35px auto 0;
     }
 
 }
