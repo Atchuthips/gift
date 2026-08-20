@@ -537,3 +537,24 @@ backdrop-filter:blur(20px);
     filter:
         drop-shadow(0 25px 40px rgba(255,255,255,.35));
 }
+
+
+@media (max-width: 768px) {
+
+    .hero {
+        min-height: 52vh;
+    }
+
+    #thumbnail {
+        width: 190px;
+    }
+
+    .hero-content {
+        padding-top: 40px;
+    }
+
+    .letter {
+        margin-top: -35px;
+    }
+
+}
