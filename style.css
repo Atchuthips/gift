@@ -124,7 +124,7 @@ header{
 
 #thumbnail{
 
-    width:480px;
+    width:500px;
 
     max-width:82%;
 
@@ -155,8 +155,8 @@ margin-bottom:35px;
     max-width:1200px;
 
     line-height:1.1;
-margin-top:10px;
-margin-bottom:18px;
+margin-top:25px;
+margin-bottom:28px;
 
 margin-left:auto;
 margin-right:auto;
@@ -168,7 +168,7 @@ margin-right:auto;
     margin-top:18px;
 
     font-size:20px;
-
+	text-align:center;
     color:white;
 	font-weight:500;
 
@@ -259,7 +259,7 @@ margin:30px auto 0;
     display:flex;
 
     justify-content:space-between;
-
+	text-align:center;
     border-top:1px solid #ddd;
 
     border-bottom:1px solid #ddd;
@@ -462,7 +462,19 @@ text-align:center;
 
 }
 
-.gift,.from{
+.gift{
+
+background:rgba(255,255,255,.15);
+
+padding:12px 22px;
+
+border-radius:100px;
+
+backdrop-filter:blur(20px);
+
+}
+
+.from{
 
 background:rgba(255,255,255,.15);
 
@@ -551,7 +563,7 @@ backdrop-filter:blur(20px);
     }
 
     #thumbnail {
-        width: 190px;
+        width: 250px;
     }
 
     .hero-content {

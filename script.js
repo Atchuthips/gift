@@ -87,7 +87,7 @@ document.documentElement.style.setProperty(
     document.querySelector(".signature").style.color = rgb;
 
     // Header accent
-    document.querySelector(".gift").style.color = rgb;
+    //document.querySelector(".gift").style.color = rgb;
 
 });
 
