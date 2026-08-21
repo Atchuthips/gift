@@ -563,51 +563,76 @@ backdrop-filter:blur(20px);
     }
 
 
+/* --------------------------
+   SCROLL INDICATOR
+-------------------------- */
+
 .scroll-down {
     position: absolute;
+
     left: 50%;
-    bottom: 25px;
+    bottom: 22px;
 
     transform: translateX(-50%);
 
+    width: 20px;
+    height: 38px;
+
     z-index: 100;
 
-    width: 44px;
-    height: 44px;
-
     display: flex;
-    align-items: center;
     justify-content: center;
 
-    color: white;
     text-decoration: none;
 
-    font-size: 34px;
-    font-family: Arial, sans-serif;
-
-    opacity: 0.85;
-
-    animation: scrollBounce 1.8s ease-in-out infinite;
-
-    text-shadow: 0 2px 8px rgba(0,0,0,.7);
+    opacity: .65;
 }
 
-.scroll-down:hover {
-    opacity: 1;
+.scroll-down span {
+    position: relative;
+
+    width: 1px;
+    height: 32px;
+
+    background: rgba(255,255,255,.55);
+
+    overflow: hidden;
 }
 
-@keyframes scrollBounce {
+.scroll-down span::after {
+    content: "";
 
-    0%, 100% {
-        transform: translateX(-50%) translateY(0);
+    position: absolute;
+
+    top: -8px;
+    left: 0;
+
+    width: 1px;
+    height: 8px;
+
+    background: white;
+
+    animation: scrollLine 1.8s ease-in-out infinite;
+}
+
+@keyframes scrollLine {
+
+    0% {
+        transform: translateY(0);
+        opacity: 0;
     }
 
-    50% {
-        transform: translateX(-50%) translateY(8px);
+    25% {
+        opacity: 1;
     }
 
-}
+    75% {
+        opacity: 1;
+    }
 
-html {
-    scroll-behavior: smooth;
+    100% {
+        transform: translateY(40px);
+        opacity: 0;
+    }
+
 }
