@@ -344,7 +344,7 @@ footer{
    MOBILE
 -------------------------- */
 
-@media(max-width:768px){
+@media(max-width:900px){
 
 header{
 
@@ -362,7 +362,8 @@ header{
 
 #thumbnail{
 
-    width:250px;
+    max-width: 100%
+	width:100%;
 
 }
 
@@ -370,6 +371,7 @@ header{
 
     font-size:33px;
 	width:100%;
+	margin-bottom: 85px;
 
 }
 
