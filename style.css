@@ -490,6 +490,7 @@ backdrop-filter:blur(20px);
 .hero-content{
 
     animation:fadeUp .8s ease;
+	padding:20px;
 }
 
 .letter{
