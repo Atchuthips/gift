@@ -408,7 +408,7 @@ grid-template-columns:repeat(1,1fr);
 
 gap:20px;
 
-padding:0 40px;
+padding:0 30px;
 
 }
 
@@ -573,3 +573,14 @@ backdrop-filter:blur(20px);
     .letter {
         margin-top: -35px;
     }
+
+
+@media (max-width: 600px) {
+    .details .detail:first-child {
+        margin-top: 30px;
+    }
+
+    .details .detail:last-child {
+        margin-bottom: 30px;
+    }
+}
